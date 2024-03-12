@@ -7,7 +7,7 @@ interface CardPerspectiveProps {
   classes: string;
 }
 
-function CardPerspective({ children,classes }: CardPerspectiveProps) {
+function CardPerspective({ children, classes }: CardPerspectiveProps) {
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -63,11 +63,7 @@ function CardPerspective({ children,classes }: CardPerspectiveProps) {
   }, []);
 
   return (
-    <div
-      ref={elementRef}
-      className={classes}
-      >
-
+    <div ref={elementRef} className={classes}>
       {children}
     </div>
   );

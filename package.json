@@ -2,6 +2,10 @@
   "name": "noter-landingpage",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "guidosanchezrl@gmail.com",
+    "name": "Guido Abel Sanchez"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import "../styles/Home.css";
 import PresentationImg from "/public/bg-presentation.webp";
@@ -110,10 +109,10 @@ function Home() {
           </p>
           <div className="w-full sm:p-10 flex justify-center">
             <Link
-              href={"/principal"}
+              href={"https://app.netlify.com/sites/noter-app-coder/overview"}
               className="gradient-start-button px-6 py-3 sm:px-10 sm:py-6 hover:saturate-150 text-md sm:text-xl rounded-3xl hover:rounded-none text-white "
             >
-              Empezar
+              Empezar ahora
             </Link>
           </div>
         </div>
