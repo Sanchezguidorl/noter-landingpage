@@ -1,5 +1,5 @@
-import Image from "next/image";
 import "../styles/Home.css";
+import Image from "next/image";
 import PresentationImg from "/public/bg-presentation.webp";
 import BgStartImage from "/public/bg-start-section.webp";
 import AddTaskIcon from "@mui/icons-material/AddTask";
@@ -27,7 +27,7 @@ function Home() {
           src={PresentationImg}
           className=" object-cover saturate-50"
           alt="Imagen de cuaderno de notas"
-          sizes="(min-width: 600px) 100vw, 600px"
+          sizes="(max-width: 600px) 600px, 100vw"
         />
       </div>
       <div className=" bg-white relative px-10 word-spacing overflow-hidden arise-animation ">
@@ -82,7 +82,7 @@ function Home() {
           src={BgStartImage}
           alt="Imagen de fondo de mesa de estudio con artículos de estudio"
           className=" saturate-50"
-          sizes="(min-width: 600px) 100vw, 600px"
+          sizes="(max-width: 600px) 600px, 100vw"
         />
         <div className="absolute top-0 text-center banner w-1/2 h-full left-1/2 flex flex-col justify-center items-center  select-none">
           <p className="text-xl sm:text-4xl md:text-4xl lg:text-5xl p-3 opacity-75 text-primary word-spacing font-semibold font-permanent">
