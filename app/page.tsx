@@ -35,31 +35,20 @@ function Home() {
       </div>
       <div className=" bg-white relative px-10 word-spacing overflow-hidden arise-animation ">
         <div className="px-8 flex justify-center sm:justify-start pt-20">
-          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary  w-full sm:w-2/3 md:w-1/2 p-6 relative">
-            <span className="opacity-0 p-0 m-0">
-              Estamos comprometidos a promover el desarrollo personal y el
-              estudio en todos los estratos de la sociedad
-            </span>
-            <span className="absolute top-0 left-0 p-0 m-0">
-              <SecuentialWriteText
-                delay={1.5}
-                text="Estamos comprometidos a promover el desarrollo personal y el estudio
+          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary  w-full sm:w-2/3 md:w-1/2 p-6">
+            <SecuentialWriteText
+              delay={1.5}
+              text="Estamos comprometidos a promover el desarrollo personal y el estudio
             en todos los estratos de la sociedad"
-              />
-            </span>
+            />
           </p>
         </div>
         <div className="p-8  flex justify-center sm:justify-end pt-20">
-          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary w-full sm:w-2/3 md:w-1/2 p-6 relative">
-            <span className="opacity-0 p-0 m-0">
-              Por tal motivo, hemos creado esta herramienta gratuita y accesible
-            </span>
-            <span className="absolute top-0 left-0 p-0 m-0">
-              <SecuentialWriteText
-                delay={3}
-                text="Por tal motivo, hemos creado esta herramienta gratuita y accesible"
-              />
-            </span>
+          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary w-full sm:w-2/3 md:w-1/2 p-6">
+            <SecuentialWriteText
+              delay={3}
+              text="Por tal motivo, hemos creado esta herramienta gratuita y accesible"
+            />
           </p>
         </div>
         <div className="py-10 mt-10 w-full flex flex-col sm:flex-row justify-center gap-8 md:gap-14 lg:gap-24 text-primary">
@@ -109,7 +98,7 @@ function Home() {
           </p>
           <div className="w-full sm:p-10 flex justify-center">
             <Link
-              href={"https://app.netlify.com/sites/noter-app-coder/overview"}
+              href={"https://noter-app-coder.netlify.app/"}
               className="gradient-start-button px-6 py-3 sm:px-10 sm:py-6 hover:saturate-150 text-md sm:text-xl rounded-3xl hover:rounded-none text-white "
             >
               Empezar ahora

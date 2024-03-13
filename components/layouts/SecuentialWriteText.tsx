@@ -19,12 +19,18 @@ function SecuentialWriteText({ text, delay }: { text: string; delay: number }) {
   }, []);
   return (
     <>
-      {text.slice(0, indexChar)}
-      {indexChar < text.length && (
-        <strong className=" text-black opacity-60 font-light blinking">
-          |
-        </strong>
-      )}
+      {text.split("").map((character: string, index: number) => (
+        <span
+          key={index + indexChar}
+          className={` ${
+            index < indexChar || indexChar === text.length - 1
+              ? "opacity-100"
+              : " opacity-0"
+          }`}
+        >
+          {character}
+        </span>
+      ))}
     </>
   );
 }
