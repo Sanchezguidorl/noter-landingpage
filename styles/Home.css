@@ -7,7 +7,7 @@
     color: #1a024a74;
     box-shadow: 0px 5px 4px #15141955;
     font-weight: bold;
-    transition: all 2s ease-in-out;
+    transition: transform 2s ease-in-out, scale 2s ease-in-out;
 }
 
 .banner{
@@ -16,6 +16,16 @@
     color: #1a024a74;
     box-shadow: 0px 5px 4px #15141955;
     font-weight: bold;
+}
+
+p.premise{
+    text-shadow: 0px 4px 3px rgba(45, 45, 45, 0.81);
+    transition: scale 2s ease-in-out;
+    user-select: none;
+}
+
+p.premise:hover{
+    scale: 1.1;
 }
 
 .presentation-banner:hover{
@@ -76,18 +86,4 @@
 
 .arise-animation {
     animation: ariseAnimation 1s forwards;
-}
-
-@keyframes ariseAnimation {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.blinking{
-    animation: ariseAnimation 700ms infinite;
 }

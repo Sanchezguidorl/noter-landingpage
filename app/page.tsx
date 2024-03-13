@@ -5,20 +5,16 @@ import BgStartImage from "/public/bg-start-section.webp";
 import AddTaskIcon from "@mui/icons-material/AddTask";
 import Link from "next/link";
 import CardPerspective from "@/components/layouts/CardPerspective";
-import SecuentialWriteText from "@/components/layouts/SecuentialWriteText";
 import SignalCellularConnectedNoInternet0BarIcon from "@mui/icons-material/SignalCellularConnectedNoInternet0Bar";
 import SubjectIcon from "@mui/icons-material/Subject";
 function Home() {
   return (
     <div className=" bg-white overflow-hidden">
       <div className="h-96 sm:h-[600px] overflow-hidden relative flex justify-center arise-animation">
-        <div className="absolute top-10 sm:top-20 sm:left-20 w-[90%] sm:w-1/2 presentation-banner p-10 z-10 ">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            <SecuentialWriteText
-              delay={0}
-              text="La herramienta perfecta para tomar apuntes, crear listas y mantener
-            tus tareas en orden"
-            />
+        <div className=" select-none absolute top-10 sm:top-20 sm:left-20 w-[90%] sm:w-1/2 presentation-banner p-10 z-10 ">
+          <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl flex items-center">
+            La herramienta perfecta para tomar apuntes, crear listas y mantener
+            tus tareas en orden
           </h1>
           <h2 className=" text-primary text-md sm:text-xl mt-3 sm:mt-6 opacity-75 ">
             Organiza tu vida con Noter
@@ -31,27 +27,22 @@ function Home() {
           src={PresentationImg}
           className=" object-cover saturate-50"
           alt="Imagen de cuaderno de notas"
+          sizes="(min-width: 600px) 100vw, 600px"
         />
       </div>
       <div className=" bg-white relative px-10 word-spacing overflow-hidden arise-animation ">
-        <div className="px-8 flex justify-center sm:justify-start pt-20">
-          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary  w-full sm:w-2/3 md:w-1/2 p-6">
-            <SecuentialWriteText
-              delay={1.5}
-              text="Estamos comprometidos a promover el desarrollo personal y el estudio
-            en todos los estratos de la sociedad"
-            />
+        <div className="px-8 flex justify-center sm:justify-start mt-10">
+          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-40 text-primary  w-full sm:w-2/3 md:w-1/2 p-6 flex items-center premise relative z-10">
+            Estamos comprometidos a promover el desarrollo personal y el estudio
+            en todos los estratos de la sociedad
           </p>
         </div>
-        <div className="p-8  flex justify-center sm:justify-end pt-20">
-          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-75 text-primary w-full sm:w-2/3 md:w-1/2 p-6">
-            <SecuentialWriteText
-              delay={3}
-              text="Por tal motivo, hemos creado esta herramienta gratuita y accesible"
-            />
+        <div className="p-8  flex justify-center sm:justify-end mt-10">
+          <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-40 text-primary w-full sm:w-2/3 md:w-1/2 p-6 flex items-center premise relative z-10">
+            Por tal motivo, hemos creado esta herramienta gratuita y accesible
           </p>
         </div>
-        <div className="py-10 mt-10 w-full flex flex-col sm:flex-row justify-center gap-8 md:gap-14 lg:gap-24 text-primary">
+        <div className=" select-none py-10 mt-10 w-full flex flex-col sm:flex-row justify-center gap-8 md:gap-14 lg:gap-24 text-primary">
           <CardPerspective classes="shadow-secondary-text shadow-md hover:shadow-interactive hover:shadow-lg w-fit relative z-20 benefitCard p-8 rounded-3xl flex-1 flex flex-col items-center gap-5">
             <SignalCellularConnectedNoInternet0BarIcon className="text-7xl opacity-75" />
             <p className="opacity-75 text-center sm:text-lg md:text-xl font-semibold">
@@ -91,8 +82,9 @@ function Home() {
           src={BgStartImage}
           alt="Imagen de fondo de mesa de estudio con artículos de estudio"
           className=" saturate-50"
+          sizes="(min-width: 600px) 100vw, 600px"
         />
-        <div className="absolute top-0 text-center banner w-1/2 h-full left-1/2 flex flex-col justify-center items-center">
+        <div className="absolute top-0 text-center banner w-1/2 h-full left-1/2 flex flex-col justify-center items-center  select-none">
           <p className="text-xl sm:text-4xl md:text-4xl lg:text-5xl p-3 opacity-75 text-primary word-spacing font-semibold font-permanent">
             Moderniza tu manera de estudiar y aumenta tu productividad
           </p>

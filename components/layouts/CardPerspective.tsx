@@ -21,8 +21,8 @@ function CardPerspective({ children, classes }: CardPerspectiveProps) {
         const distanceX = clientX - (left + width / 2);
         const distanceY = clientY - (top + height / 2);
 
-        const normalizedX = (distanceX / (width / 2)) * 20;
-        const normalizedY = (distanceY / (height / 2)) * 20;
+        const normalizedX = (distanceX / (width / 2)) * 10;
+        const normalizedY = (distanceY / (height / 2)) * 10;
 
         const classString = `
           perspective(500px)
