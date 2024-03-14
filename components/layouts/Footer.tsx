@@ -5,7 +5,6 @@ function Footer() {
   return (
     <div className="relative arise-animation overflow-hidden">
     <Image
-      loading="lazy"
       quality={70}
       placeholder="blur"
       src={BgStartImage}

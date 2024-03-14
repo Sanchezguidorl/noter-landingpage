@@ -19,7 +19,7 @@ function Header() {
       src={PresentationImg}
       className=" object-cover saturate-50"
       alt="Imagen de cuaderno de notas"
-      sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1500px,(min-width: 1500px) 1920px "
+      sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1920px"
     />
   </div>
   )
