@@ -1,12 +1,13 @@
 import "../styles/Home.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import PresentationImg from "/public/bg-presentation.webp";
 import BgStartImage from "/public/bg-start-section.webp";
 import AddTaskIcon from "@mui/icons-material/AddTask";
 import Link from "next/link";
-import CardPerspective from "@/components/layouts/CardPerspective";
 import SignalCellularConnectedNoInternet0BarIcon from "@mui/icons-material/SignalCellularConnectedNoInternet0Bar";
 import SubjectIcon from "@mui/icons-material/Subject";
+const CardPerspective=dynamic(()=>import("@/components/layouts/CardPerspective"));
 function Home() {
   return (
     <div className=" bg-white overflow-hidden">
@@ -27,7 +28,7 @@ function Home() {
           src={PresentationImg}
           className=" object-cover saturate-50"
           alt="Imagen de cuaderno de notas"
-          sizes="(max-width: 600px) 600px, 1920px"
+          sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1920px"
         />
       </div>
       <div className=" bg-white relative px-10 word-spacing overflow-hidden arise-animation ">
@@ -77,12 +78,13 @@ function Home() {
       </div>
       <div className="relative arise-animation overflow-hidden">
         <Image
+          loading="lazy"
           quality={70}
           placeholder="blur"
           src={BgStartImage}
           alt="Imagen de fondo de mesa de estudio con artículos de estudio"
           className=" saturate-50"
-          sizes="(max-width: 600px) 600px, 1920px"
+          sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1920px"
         />
         <div className="absolute top-0 text-center banner w-1/2 h-full left-1/2 flex flex-col justify-center items-center  select-none">
           <p className="text-xl sm:text-4xl md:text-4xl lg:text-5xl p-3 opacity-75 text-primary word-spacing font-semibold font-permanent">
