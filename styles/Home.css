@@ -87,3 +87,18 @@ p.premise:hover{
 .arise-animation {
     animation: ariseAnimation 1s forwards;
 }
+
+.arise-animation{
+    animation: arise 1s ease-in-out;
+}
+
+@keyframes arise {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
