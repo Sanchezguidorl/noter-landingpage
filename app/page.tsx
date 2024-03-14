@@ -1,36 +1,17 @@
 import "../styles/Home.css";
-import Image from "next/image";
 import dynamic from "next/dynamic";
-import PresentationImg from "/public/bg-presentation.webp";
-import BgStartImage from "/public/bg-start-section.webp";
 import AddTaskIcon from "@mui/icons-material/AddTask";
-import Link from "next/link";
 import SignalCellularConnectedNoInternet0BarIcon from "@mui/icons-material/SignalCellularConnectedNoInternet0Bar";
 import SubjectIcon from "@mui/icons-material/Subject";
-const CardPerspective=dynamic(()=>import("@/components/layouts/CardPerspective"));
+import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
+const CardPerspective = dynamic(
+  () => import("@/components/layouts/CardPerspective")
+);
 function Home() {
   return (
     <div className=" bg-white overflow-hidden">
-      <div className="h-96 sm:h-[600px] overflow-hidden relative flex justify-center arise-animation">
-        <div className=" select-none absolute top-10 sm:top-20 sm:left-20 w-[90%] sm:w-1/2 presentation-banner p-10 z-10 ">
-          <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl flex items-center">
-            La herramienta perfecta para tomar apuntes, crear listas y mantener
-            tus tareas en orden
-          </h1>
-          <h2 className=" text-primary text-md sm:text-xl mt-3 sm:mt-6 opacity-75 ">
-            Organiza tu vida con Noter
-          </h2>
-        </div>
-        <Image
-          priority
-          quality={70}
-          placeholder="blur"
-          src={PresentationImg}
-          className=" object-cover saturate-50"
-          alt="Imagen de cuaderno de notas"
-          sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1920px"
-        />
-      </div>
+      <Header/>
       <div className=" bg-white relative px-10 word-spacing overflow-hidden arise-animation ">
         <div className="px-8 flex justify-center sm:justify-start mt-10">
           <p className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl opacity-40 text-primary  w-full sm:w-2/3 md:w-1/2 p-6 flex items-center premise relative z-10">
@@ -76,30 +57,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="relative arise-animation overflow-hidden">
-        <Image
-          loading="lazy"
-          quality={70}
-          placeholder="blur"
-          src={BgStartImage}
-          alt="Imagen de fondo de mesa de estudio con artículos de estudio"
-          className=" saturate-50"
-          sizes="(max-width: 600px) 600px,(min-width: 600px) 900px,(min-width: 900px) 1920px"
-        />
-        <div className="absolute top-0 text-center banner w-1/2 h-full left-1/2 flex flex-col justify-center items-center  select-none">
-          <p className="text-xl sm:text-4xl md:text-4xl lg:text-5xl p-3 opacity-75 text-primary word-spacing font-semibold font-permanent">
-            Moderniza tu manera de estudiar y aumenta tu productividad
-          </p>
-          <div className="w-full sm:p-10 flex justify-center">
-            <Link
-              href={"https://noter-app-coder.netlify.app/"}
-              className="gradient-start-button px-6 py-3 sm:px-10 sm:py-6 hover:saturate-150 text-md sm:text-xl rounded-3xl hover:rounded-none text-white "
-            >
-              Empezar ahora
-            </Link>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
