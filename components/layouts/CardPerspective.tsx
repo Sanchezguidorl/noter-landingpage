@@ -50,7 +50,6 @@ function CardPerspective({ children, classes }: CardPerspectiveProps) {
   };
 
   useEffect(() => {
-
     if (elementRef.current) {
       const element = elementRef.current;
       element.addEventListener("mousemove", handleMousePerspective);

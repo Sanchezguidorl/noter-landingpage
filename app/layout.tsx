@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <link rel="preload" href="/bg-presentation.webp" as="image" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
